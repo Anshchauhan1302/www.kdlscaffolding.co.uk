@@ -1,0 +1,911 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.fa-angle-down {
+    margin-left: 4px;
+}
+
+/* Disclaimer */
+
+.disclaimer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #ffd803;
+    padding: 10px 130px;
+    font-size: 14px;
+}
+
+.disclaimer>p>a {
+    color: #d20303;
+    text-decoration: underline;
+}
+
+/* Header Start */
+
+/* Navbar Start */
+
+header {
+    margin-bottom: -30px;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #e3e3e3;
+    padding-bottom: 120px;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.logo {
+    width: 30%;
+    margin-left: 140px;
+}
+
+.logo>img {
+    width: 170px;
+    height: 65px;
+    margin-top: 20px;
+}
+
+.logo>p {
+    width: 300px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.navlinks {
+    width: 80%;
+    height: 130px;
+    position: relative;
+}
+
+.navlist {
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hover-links {
+    padding-inline: 15px;
+    padding-block: 30px;
+    font-size: 15px;
+}
+
+.hover-links:hover,
+.hover-links:active,
+.hover-links:visited {
+    background-color: #ffd803;
+    border-bottom: 4px solid rgb(29, 29, 98);
+}
+
+/* Dropdown Start */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #014a6d;
+    margin-left: 0px;
+    width: 250px;
+    position: absolute;
+    top: 105%;
+    z-index: 99;
+    margin-top: 0px;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+
+.dropdown-content a {
+    font-size: 13px;
+    width: auto;
+    color: rgb(255, 255, 255);
+    background-color: #014a6d;
+    border-bottom: 1px dashed #1066b1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    width: 100%;
+    background-color: #1066b1;
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-1 {
+    right: -79%;
+}
+
+.dropdown-2 {
+    right: -113%;
+}
+
+.dropdown-3 {
+    left: 0;
+}
+
+/* Dropdown End */
+
+/* Navbar End */
+
+.slideshow-container {
+    width: 100%;
+    height: 74vh;
+    animation: slider 7s linear infinite;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(images/img4.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background-image: url(images/img5.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-image: url(images/img6.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Header End */
+
+/* Contact Start */
+
+.contact {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(82, 191, 245);
+    margin-top: -31px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.phone-number {
+    justify-content: center;
+    align-items: center;
+}
+
+.deatils {
+    margin-left: 10px;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.deatils>p:nth-child(1) {
+    font-size: 14px;
+}
+
+.deatils>p:nth-child(2) {
+    font-size: 20px;
+}
+
+
+.business-email {
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgb(243, 234, 234);
+    border-right: 1px solid rgb(243, 234, 234);
+    padding-inline: 50px;
+}
+
+.business-email>img {
+    width: 60px;
+}
+
+.email {
+    margin-left: 10px;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.email>p:nth-child(1) {
+    font-size: 14px;
+}
+
+.email>p:nth-child(2) {
+    font-size: 20px;
+}
+
+.email>p:nth-child(2)>a {
+    color: #ffd903;
+    text-decoration: underline;
+}
+
+
+.office-timing {
+    justify-content: center;
+    align-items: center;
+}
+
+.timing {
+    margin-left: 10px;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.timing>p:nth-child(1) {
+    font-size: 14px;
+}
+
+.timing>p:nth-child(2) {
+    font-size: 20px;
+}
+
+/* Contact End */
+
+/* Welcome Section Start */
+
+.section2 {
+    width: 100%;
+    height: 440px;
+    background: #efeeee;
+    padding-inline: 10%;
+    gap: 100px;
+
+}
+
+.welcome-left {
+    width: 620px;
+}
+
+.welcome-right {
+    width: 86%;
+    height: auto;
+    padding: 95px 50px;
+    margin: 0 auto;
+}
+
+.welcome-right>h1 {
+    font-size: 35px;
+    color: #3c3c3c;
+    line-height: 38px;
+    font-weight: 400;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+}
+
+.welcome-right>p {
+    font-size: 14px;
+    color: #5f5f5f;
+    padding: 5px 33px 0px 0px;
+    text-align: justify;
+}
+
+/* Welcome Section End */
+
+/* What We Do Section Start */
+
+.top-heading {
+    text-align: center;
+    margin-block: 20px;
+}
+
+.top-heading>h2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.four-boxes {
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.four-boxes>div {
+    justify-content: center;
+    gap: 20px;
+}
+
+.small-img {
+    position: relative;
+}
+
+.estimating>img {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.estimating>p>a {
+    position: absolute;
+    bottom: 25px;
+    left: 37%;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.estimating>p>a:hover {
+    transform: scale(1.03);
+}
+
+.erection>img {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.erection>p>a {
+    position: absolute;
+    bottom: 25px;
+    left: 20%;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.erection>p>a:hover {
+    transform: scale(1.03);
+}
+
+.labor-services>img {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.labor-services>p>a {
+    position: absolute;
+    bottom: 25px;
+    left: 30%;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.labor-services>p>a:hover {
+    transform: scale(1.03);
+}
+
+.project-management>img {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.project-management>p>a {
+    position: absolute;
+    bottom: 25px;
+    left: 28%;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.project-management>p>a:hover {
+    transform: scale(1.03);
+}
+
+.two-boxes>div {
+    justify-content: center;
+    gap: 20px;
+}
+
+.two-boxes>.big-imgs>.big-img>img:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+}
+
+/* What We Do Section End */
+
+/*Gallery Start */
+
+.gallery-top {
+    text-align: center;
+    margin-block: 20px;
+}
+
+.gallery-top>h2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.our-gallery {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.gallery-pics {
+    width: 1234px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.img {
+    display: block;
+    padding: 9px;
+    border: 1px solid #ccc;
+}
+
+.img1 {
+    transition: width 1s 5s;
+}
+
+.view-more-btn {
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+}
+
+.view-more-btn>a {
+    background-color: #63a7e2;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 8px 13px;
+    border-radius: 6px;
+}
+
+.view-more-btn>a:hover {
+    background-color: #0a4b69;
+}
+
+/* Gallery End */
+
+/* Footer Start */
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom {
+    height: 280px;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    background-image: url(images/img41.jpeg);
+}
+
+.footer-bottom>div>ul>li:first-child {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer-bottom>div>ul>li>a {
+    font-size: 13px;
+    color: #dcd5f4;
+}
+
+.footer-bottom>div>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    justify-content: start;
+    text-align: left;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000;
+    margin-left: 10px;
+    background-color: #ffd803;
+    padding-block: 11px;
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 5px #000;
+}
+
+.follow-us>p {
+    font-size: 12px;
+    color: #dcd5f4;
+    margin-top: 27px;
+}
+
+.footer-logo {
+    align-items: center;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 8px;
+    bottom: -15px;
+}
+
+.back-to-top:hover {
+    transform: translateY(-8px);
+}
+
+/* Footer End */
+
+
+
+/* About Us Page */
+
+.about-main {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -6px;
+}
+
+.about-section1,
+.gallery-section1,
+.career-section1,
+.contact-section1,
+.timber-section1,
+.commercial-section1,
+.industrial-section1,
+.residential-section1 {
+    width: 100%;
+    padding-block: 15px;
+    background-color: #014a6d;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.page-name>a {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.page-name>a:hover {
+    text-decoration: underline;
+}
+
+.about-section {
+    width: 100%;
+}
+
+.about-us-heading,
+.gallery-heading,
+.career-heading,
+.contact-heading,
+.timber-heading,
+.commercial-heading,
+.industrial-heading,
+.residential-heading {
+    width: 100%;
+    color: #454545;
+    font-size: 2.1rem;
+    margin-block: 20px;
+    text-align: center;
+}
+
+.about-information {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-inline: 8%;
+    margin-bottom: 100px;
+}
+
+.right-para {
+    line-height: 24px;
+    font-size: 1rem;
+    margin-left: 25px;
+}
+
+.right-para>p {
+    text-align: justify;
+}
+
+
+
+/* Gallery Page */
+
+.gallery-section1,
+.career-section1,
+.contact-section1,
+.timber-section1,
+.commercial-section1,
+.industrial-section1,
+.residential-section1 {
+    margin-top: -7px;
+}
+
+.gallery-heading {
+    margin-top: 10px;
+    font-size: 2.2rem;
+}
+
+.gallery-imgs,
+.timber-imgs,
+.commercial-imgs,
+.residential-imgs,
+.industrial-imgs {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 330px 330px 330px 330px;
+    margin: 0 auto;
+}
+
+.gallery-img>img,
+.timber-img>img,
+.commercial-img>img,
+.residential-img>img,
+.industrial-img>img {
+    width: 300px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.gallery-img>img:hover,
+.timber-img>img:hover,
+.commercial-img>img:hover,
+.residential-img>img:hover,
+.industrial-img>img:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 5px #000;
+}
+
+
+
+
+/* Career Page */
+
+.career-section1 {
+    margin-top: -5px;
+}
+
+.career-section2 {
+    margin-inline: 8%;
+    margin-bottom: 70px;
+}
+
+.content {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.left-img {
+    width: 50%;
+    margin-right: 50px;
+}
+
+.para {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.image {
+    width: 100%;
+    text-align: center;
+}
+
+.right-form {
+    width: 50%;
+}
+
+.right-form>form {
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 90%;
+}
+
+.right-form>form>input,
+textarea,
+.upload-cv {
+    padding: 7px 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-block: 5px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+.right-form>form>label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.input-width {
+    width: 100%;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+.submit-btn,
+.reset-btn {
+    background: #014a6d;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 40px;
+    border: 1px solid #014a6d;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover,
+.reset-btn:hover {
+    background: rgb(6, 107, 153)
+}
+
+
+
+/* Contact Us Page */
+
+.contact-section1,
+.timber-section1,.career-section1 {
+    margin-top: -7px;
+}
+
+.contact-section2 {
+    margin-inline: 8%;
+    margin-bottom: 70px;
+}
+
+.contact-us-information {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+
+/* Contact Us Left */
+
+.left-form {
+    width: 45%;
+}
+
+.left-form>form {
+    padding: 15px;
+    width: 90%;
+}
+
+.left-form>form>input,
+textarea {
+    padding: 7px 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-block: 5px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+.left-form>form>label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.input-width {
+    width: 100%;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+
+/* Contact Us Right */
+
+/* Right Deatils Section */
+
+.right-details {
+    width: 50%;
+}
+
+.right-heading,
+.form-heading {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #424242;
+    margin-bottom: 10px;
+}
+
+.right-address {
+    background: #a9e3ff;
+    border: 1px solid #1374a2;
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.right-address>p:first-child {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.right-bottom {
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0px 22px 0 rgba(0, 0, 0, 0.1), 0 0px 18px 0 rgba(0, 0, 0, 0.10);
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.contact-details {
+    padding-block: 10px;
+    border: 1px solid #ccc;
+}
+
+.dot-border {
+    width: 100%;
+    border-top: 1.5px dashed #ccc;
+    margin-top: -18px;
+    margin-bottom: 15px;
+}
+
+.mob,
+.email {
+    color: #8c000d;
+    font-weight: 600;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.contact-number,
+.email-id>a {
+    color: #424242;
+}
+
+.email-id>a:hover {
+    text-decoration: underline;
+    color: rgb(0, 145, 255);
+}
+
+
+/* Tember Page */
+
+.timber-section2,
+.commercial-section2,
+.residential-section2,
+.industrial-section2 {
+    margin-bottom: 70px;
+}
